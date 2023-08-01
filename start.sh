@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /THALAPATHY-FILTER-BOT 
 fi
-cd /Auto-search-tamil-bot
+cd /THALAPATHY-FILTER-BOT 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
