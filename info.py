@@ -13,18 +13,18 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28808131'))
-API_HASH = environ.get('API_HASH', '2edee43f92f653fb8132de3f908934c2')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6689412043:AAG9LyxADnbY-Tt_QQY0GMb8H1U0NAMRiaw")
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/920470c69bc26426d019e.jpg https://telegra.ph/file/ba941bb33f3ec8ede35a0.jpg https://telegra.ph/file/45fba6a707d70b5b49ed2.jpg https://telegra.ph/file/34f0aa1fc5d0f4975625f.jpg https://telegra.ph/file/29912fe58766a3da41706.jpg https://telegra.ph/file/353947cdef83ea641afba.jpg https://telegra.ph/file/848680130c4f9d61dd99c.jpg https://telegra.ph/file/efeaec39efb273b2d372a.jpg https://telegra.ph/file/cc6c586660f6e11e074e7.jpg https://telegra.ph/file/f8947edaa35c3ba5207cb.jpg https://telegra.ph/file/5b551ee5fdb396f6aabe9.jpg https://telegra.ph/file/cc4cb3e72f0a15d968ac0.jpg https://telegra.ph/file/fcde1fd1a3134ae999f1f.jpg https://telegra.ph/file/b5debb5a07f17184da5e2.jpg https://telegra.ph/file/5df5fe6db59cac1e10f14.jpg https://telegra.ph/file/97f78ea86b69898bbb984.jpg https://telegra.ph/file/3e0feb21d22a38b043393.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/howtodownloadmoviestamilhd/70")
-SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
+PICS = (environ.get('PICS', '')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "")
+MELCOW_VID = environ.get("MELCOW_VID", "")
+SPELL_IMG = environ.get("SPELL_IMG", "")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -43,26 +43,26 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://NRS:NRS@cluster0.dojilyr.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "NRS")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'kpslink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e3d82cdf8f9f4783c42170b515d1c271fb1c4500')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/tamilmovies4Krio')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Teamrioupdates')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtodownloadmoviestamilhd/65')
+GRP_LNK = environ.get('GRP_LNK', '')
+CHNL_LNK = environ.get('CHNL_LNK', '')
+TUTORIAL = environ.get('TUTORIAL', '')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nambha and Nanbis ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'rionetworksupport')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
