@@ -52,7 +52,7 @@ VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shareus.io')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1QHyiqScg0MDwgvSGO4tnzBpz7C2')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'greylinks.in')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '607aff0bc217f0c5b0f1457090d6e185c74fdc5c
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '607aff0bc217f0c5b0f1457090d6e185c74fdc5c')
 ')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
